@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* ==================== */
+/*      HEADER SECTION  */
+/* ==================== */
+
+/* Turns .header-container into a flex container
+→ Its direct children (h1.logo and nav) become flex items
+→ By default, these items are laid out in a row */
+.header-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center; /* This aligns logo and nav items vertically */
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 22px;
+}
+
+/* Further turns the children of nav be flex,
+so the item (About, journey, about) align in a row */
+.header-container nav ul {
+    list-style: none;   /* removes the bullets */
+    padding: 0;          /* removes default padding */
+    margin: 0;           /* optional: removes extra spacing */
+    display: flex;
+    gap: 31px;
+    
+}
+
+/* Define the style of the logo (portfolio) */
+.logo {
+    color: #64FFDA;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+}
+
+.header-container li a {
+    text-decoration: none;
+    color: #E6F1FF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+/* Change colors when in click */
+.header-container li a:hover {
+    color: #64FFDA;;
+}
+
+/* Define the overall background colour */
+body {
+    background: #0A192F;
+}
