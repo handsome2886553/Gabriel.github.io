@@ -58,3 +58,90 @@ so the item (About, journey, about) align in a row */
 body {
     background: #0A192F;
 }
+
+/* ==================== */
+/*      MAIN SECTION    */
+/* ==================== */
+
+/* .main-content: Layout container for main body, uses flex to arrange intro and profile side by side */
+/* .intro_section h2: Main heading style for introduction */
+/* .intro_section p: Paragraph style for introduction */
+/* .profile-holder: Container for profile image, fixed width */
+/* .profile-picture: Circular profile image style */
+/* .contact-button: Style for the 'Get in touch' button */
+/* .contact-button:hover: Hover effect for the button */
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 24px;
+}
+
+.intro_section h2{
+    flex: 1;
+    margin-right: 24px;
+    color: #E6F1FF;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 150% */
+}
+
+.intro_section p {
+    flex: 1;
+    margin-right: 24px;
+    color: #8892B0;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px; /* 180% */
+}
+
+.profile-holder {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    background: #E2E2E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 36px;
+    font-family: Poppins, sans-serif;
+    border-radius: 4px;
+}
+
+.contact-button {
+    padding: 14px 32px;
+    border: 2px solid #64FFDA;
+    background: transparent;
+    color: #64FFDA;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.contact-button:hover {
+    background: #64FFDA;
+    color: #0A192F;
+}
+
+.footer {
+    color: #8892B0;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
